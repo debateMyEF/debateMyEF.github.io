@@ -98,7 +98,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: serif;
+    font-family: 'slabo_27pxregular', serif;
 }
 section.countdown {
     font-size: 5vw;
@@ -122,4 +122,17 @@ section.countdown {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
+}
+
+@font-face {
+    font-family: 'slabo_27pxregular';
+    src: url('../fonts/slabo/Slabo27px-Regular-webfont.eot');
+    src: url('../fonts/slabo/Slabo27px-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/slabo/Slabo27px-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/slabo/Slabo27px-Regular-webfont.woff') format('woff'),
+         url('../fonts/slabo/Slabo27px-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/slabo/Slabo27px-Regular-webfont.svg#slabo_27pxregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
