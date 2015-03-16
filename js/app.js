@@ -6,7 +6,7 @@ angular
 
         var now = new Date();
 
-        var final = new Date(2015, 02, 18, 6, 0);
+        var final = new Date(2015, 02, 17, 18, 0);
 
         var times = $ngCountdown.units.hours | $ngCountdown.units.minutes
         | $ngCountdown.units.seconds | $ngCountdown.units.days;
