@@ -98,7 +98,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Slabo 27px', serif;
+    font-family: serif;
 }
 section.countdown {
     font-size: 5vw;
