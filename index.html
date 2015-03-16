@@ -8,11 +8,17 @@
 </head>
 <body ng-app="debateMyEF">
     <section ng-controller="CountdownCtrl" class="countdown">
-        <span ng-cloak>
-        {{date.days | timestamp: 'day'}}, {{date.hours | timestamp: 'hour'}},
-        {{date.minutes | timestamp: 'minute'}} y
-        {{date.seconds | timestamp: 'second'}}
-        </span>
+        <div>
+            <span ng-cloak>
+            {{date.days | timestamp: 'day'}}, {{date.hours | timestamp: 'hour'}},
+            {{date.minutes | timestamp: 'minute'}} y
+            {{date.seconds | timestamp: 'second'}}
+            </span>
+        </div>
+        <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/-vSiTz70JSY" frameborder="0" allowfullscreen></iframe>
+        </div>
+
     </section>
     <!--libs!-->
     <script src ="./lib/angular/angular.min.js"></script>
