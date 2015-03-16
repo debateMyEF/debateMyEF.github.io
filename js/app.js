@@ -15,7 +15,7 @@ angular
             ' milisegundo| segundo| minuto| hora| día| semana| mes| año| década| século| milenio',
             ' milisegundos| segundos| minutos| horas| días| semanas| meses| años| décadas| séculos| milenios',
             ' y ',
-            ' ',
+            ' , ',
             'ahora');
 
             $scope.timestamp = $ngCountdown.init(now, final, times).toString();
