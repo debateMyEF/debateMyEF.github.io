@@ -1,0 +1,32 @@
+{
+    "name": "ngcountdown",
+    "version": "0.0.1",
+    "main": "dist/ng-countdown.js",
+    "description": "A countdown service for Angular.js",
+    "authors": [
+        "Sebastian Osorio <svzosorio@boolinc.co>"
+    ],
+    "description": "countdown.js services for angular",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/svzosorio/ngCountdown"
+    },
+    "keywords": [
+        "countdown",
+        "ngCountdown",
+        "ng-countdown",
+        "angularjs"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        ".bowerrc"
+    ],
+    "dependencies": {
+        "countdownjs": "~2.5.2"
+    }
+}

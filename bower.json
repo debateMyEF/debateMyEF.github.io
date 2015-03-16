@@ -1,0 +1,26 @@
+{
+  "name": "debateMyEf",
+  "version": "0.0.1",
+  "authors": [
+    "Sebastian Osorio <svzosorio@boolinc.co>"
+  ],
+  "description": "Landing page for Debate MyEF",
+  "main": "index.html",
+  "keywords": [
+    "Debate",
+    "MyEF"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "ngcountdown": "*"
+  }
+}

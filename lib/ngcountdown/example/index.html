@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ngCountdown</title>
+
+    <link rel="stylesheet" href="http://cdn.foundation5.zurb.com/foundation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    <script src="../lib/countdownjs/countdown.js"></script>
+    <script src="../dist/ng-countdown.js"></script>
+
+    <script>
+        angular.module('example', ['ngCountdown'])
+        .controller('MainCtrl', function($scope, $ngCountdown, $timeout){
+
+            var start = function(){
+                console.log('start');
+            };
+
+            var stop = function(){
+                console.log('stop');
+            }
+
+            function init(){
+
+                var now = new Date();
+
+                var final = new Date(2015, 02, 18, 6, 0, 0, 0);
+
+                var times = $ngCountdown.units.hours | $ngCountdown.units.minutes
+                            | $ngCountdown.units.seconds | $ngCountdown.units.days;
+
+            $ngCountdown.setLabels(
+	' milisegundo| segundo| minuto| hora| día| semana| mes| año| década| século| milenio',
+	' milisegundos| segundos| minutos| horas| días| semanas| meses| años| décadas| séculos| milenios',
+	' y ',
+	' : ',
+	'ahora');
+
+                $scope.timestamp = $ngCountdown.init(now, final, times).toString();
+
+                $timeout(init, 10);
+            };
+
+            init();
+        });
+    </script>
+</head>
+<body ng-app="example" ng-controller="MainCtrl">
+    <h1 class="center">ngCountdown <small>by svzosorio</small></h1>
+
+    <span>{{timestamp}}</span>
+</body>
+</html>
