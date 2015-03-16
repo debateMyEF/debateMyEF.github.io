@@ -8,7 +8,7 @@
 </head>
 <body ng-app="debateMyEF">
     <section ng-controller="CountdownCtrl" class="countdown">
-        <span>
+        <span ng-cloak>
         {{date.days | timestamp: 'day'}}, {{date.hours | timestamp: 'hour'}},
         {{date.minutes | timestamp: 'minute'}} y
         {{date.seconds | timestamp: 'second'}}
