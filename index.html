@@ -15,7 +15,7 @@
 <body ng-app="debateMyEF">
     <section ng-controller="CountdownCtrl" class="countdown">
         <div ng-if="date.days != 0 || date.hours != 0 || date.minutes != 0 || date.seconds != 0">
-            <span ng-cloak style="color: gray">
+            <span ng-cloak style="color: #eee">
             {{date.days | timestamp: 'day'}}, {{date.hours | timestamp: 'hour'}},
             {{date.minutes | timestamp: 'minute'}} y
             {{date.seconds | timestamp: 'second'}}
