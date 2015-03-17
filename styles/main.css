@@ -132,10 +132,19 @@ footer a {
 
 #youtube {
     color: #eee;
+    font-size: 12vh;
 }
 
 #youtube:hover {
     color: #61B140 !important;
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 #youtube2:hover {
@@ -162,7 +171,7 @@ footer a {
 *ng-cloak style
 **/
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
+    display: none !important;
 }
 
 /**
@@ -173,10 +182,10 @@ footer a {
     font-family: 'slabo_27pxregular';
     src: url('../fonts/slabo/Slabo27px-Regular-webfont.eot');
     src: url('../fonts/slabo/Slabo27px-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/slabo/Slabo27px-Regular-webfont.woff2') format('woff2'),
-         url('../fonts/slabo/Slabo27px-Regular-webfont.woff') format('woff'),
-         url('../fonts/slabo/Slabo27px-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/slabo/Slabo27px-Regular-webfont.svg#slabo_27pxregular') format('svg');
+    url('../fonts/slabo/Slabo27px-Regular-webfont.woff2') format('woff2'),
+    url('../fonts/slabo/Slabo27px-Regular-webfont.woff') format('woff'),
+    url('../fonts/slabo/Slabo27px-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/slabo/Slabo27px-Regular-webfont.svg#slabo_27pxregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
