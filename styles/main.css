@@ -90,7 +90,7 @@ input, select {
 **/
 
 body {
-    background-color: #eee;
+    background-color: black;
 }
 section {
     height: 95vh;
@@ -113,12 +113,12 @@ footer{
 }
 
 footer a {
-    color: black;
+    color: gray;
     margin: 0vh 2vh 0vh 2vh;
 }
 
 #youtube {
-    color: black;
+    color: gray;
 }
 
 #youtube:hover {
@@ -138,7 +138,7 @@ footer a {
 }
 
 #github:hover {
-    color: gray;
+    color: #8b9dc3;
 }
 
 /**
