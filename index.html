@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./lib/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/animate.css/animate.css">
 
 </head>
 <body>
@@ -21,19 +22,19 @@
             {{date.seconds | timestamp: 'second'}}
             </span>
         </div>
-        <div ng-if="!validateDate">
-            <span>
+        <div ng-if="!validateDate" class="animated" ng-class="{flipInX: !animate, fadeOut: animate}">
+            <span ng-cloak>
                 #DebateMyEF
             </span>
             <br>
         </div>
-        <div>
+        <div class="animated" ng-class="{zoomIn: !animate, fadeOut: animate}">
             <a href="https://youtu.be/FKf2C7LVW5o">
                 <i class="fa fa-youtube-play" id="youtube"></i>
             </a>
         </div>
     </section>
-    <footer>
+    <footer class="animated" ng-class="{zoomIn: !animate, fadeOut: animate}">
         <a href="http://fb.com/groups/DebateMyEF" id="facebook" target="_blank">
             <i class="fa fa-facebook"></i>
         </a>
@@ -53,9 +54,11 @@
     <script src="./lib/countdownjs/countdown.js"></script>
     <script src="./lib/string-formatter/string-formatter.js"></script>
     <script src="./lib/jquery/dist/jquery.js"></script>
+    <script src="./lib/angular-animate/angular-animate.js"></script>
 
     <!-- app -->
     <script src="./js/app.js"></script>
+    <script src="./js/filter.js"></script>
 
 </body>
 </html>
