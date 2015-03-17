@@ -14,25 +14,30 @@
 </head>
 <body ng-app="debateMyEF">
     <section ng-controller="CountdownCtrl" class="countdown">
-        <div>
+        <div ng-if="date.days != 0 || date.hours != 0 || date.minutes != 0 || date.seconds != 0">
             <span ng-cloak>
             {{date.days | timestamp: 'day'}}, {{date.hours | timestamp: 'hour'}},
             {{date.minutes | timestamp: 'minute'}} y
-            {{date.seconds | timestamp: 'second'}} 
+            {{date.seconds | timestamp: 'second'}}
             </span>
+        </div>
+        <div>
+            <a href="https://youtu.be/FKf2C7LVW5o">
+                <i class="fa fa-youtube-play" id="youtube"></i>
+            </a>
         </div>
     </section>
     <footer>
-        <a href="http://fb.com/groups/DebateMyEF" target="_blank">
+        <a href="http://fb.com/groups/DebateMyEF" id="facebook" target="_blank">
             <i class="fa fa-facebook"></i>
         </a>
-        <a href="http://twitter.com/DebateMyEF" target="_blank">
+        <a href="http://twitter.com/DebateMyEF" id="twitter" target="_blank">
             <i class="fa fa-twitter"></i>
         </a>
-        <a href="http://plus.google.com/events/ch9p0quvj7lp855n1m8cemq8hug" target="_blank">
-            <i class="fa fa-google-plus"></i>
+        <a href="http://plus.google.com/events/ch9p0quvj7lp855n1m8cemq8hug" id="gplus" target="_blank">
+            <i class="fa fa-google-plus" ></i>
         </a>
-        <a href="http://github.com/debateMyEF/debateMyEF.github.io" target="_blank">
+        <a href="http://github.com/debateMyEF/debateMyEF.github.io" id="github" target="_blank">
             <i class="fa fa-github-alt"></i>
         </a>
     </footer>

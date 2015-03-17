@@ -93,7 +93,7 @@ body {
     background-color: #eee;
 }
 section {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,9 +112,33 @@ footer{
     height: 4vh;
 }
 
-footer a i{
+footer a {
     color: black;
     margin: 0vh 2vh 0vh 2vh;
+}
+
+#youtube {
+    color: black;
+}
+
+#youtube:hover {
+    color: #e52d27;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+
+#twitter:hover {
+    color: #4099ff;
+}
+
+#gplus:hover {
+    color: #d34836;
+}
+
+#github:hover {
+    color: gray;
 }
 
 /**
