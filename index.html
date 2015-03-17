@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="debateMyEF">
 <head>
     <meta charset="UTF-8">
     <title>#DebateMyEF</title>
@@ -12,14 +12,20 @@
     <link rel="stylesheet" href="./lib/components-font-awesome/css/font-awesome.min.css">
 
 </head>
-<body ng-app="debateMyEF">
+<body>
     <section ng-controller="CountdownCtrl" class="countdown">
-        <div ng-if="date.days != 0 || date.hours != 0 || date.minutes != 0 || date.seconds != 0">
-            <span ng-cloak style="color: #eee">
+        <div ng-if="validateDate">
+            <span ng-cloak>
             {{date.days | timestamp: 'day'}}, {{date.hours | timestamp: 'hour'}},
             {{date.minutes | timestamp: 'minute'}} y
             {{date.seconds | timestamp: 'second'}}
             </span>
+        </div>
+        <div ng-if="!validateDate">
+            <span>
+                #DebateMyEF
+            </span>
+            <br>
         </div>
         <div>
             <a href="https://youtu.be/FKf2C7LVW5o">
@@ -46,6 +52,7 @@
     <script src="./lib/ngcountdown/dist/ng-countdown.js"></script>
     <script src="./lib/countdownjs/countdown.js"></script>
     <script src="./lib/string-formatter/string-formatter.js"></script>
+    <script src="./lib/jquery/dist/jquery.js"></script>
 
     <!-- app -->
     <script src="./js/app.js"></script>

@@ -2,21 +2,43 @@ angular
 .module('debateMyEF', ['ngCountdown'])
 .controller('CountdownCtrl', function($scope, $ngCountdown, $timeout){
 
-    function init(){
+    var now = new Date();
 
-        var now = new Date();
+    //var final = new Date(2015, 02, 17, 18, 0);
+    var final = new Date(2015, 02, 16, 23, 59);
 
-        var final = new Date(2015, 02, 17, 18, 0);
+    var times = $ngCountdown.units.hours | $ngCountdown.units.minutes
+    | $ngCountdown.units.seconds | $ngCountdown.units.days;
 
-        var times = $ngCountdown.units.hours | $ngCountdown.units.minutes
-        | $ngCountdown.units.seconds | $ngCountdown.units.days;
+    function repaint(){
+        $(document.body).css('background-color', '#eee');
+        $('footer a').css('color', 'black');
+        $('#youtube').css('color', 'black');
+        $('section').css('color', 'black');
+    };
+
+    function initCountdown(){
+
+        now = new Date();
 
         $scope.date = $ngCountdown.init(now, final, times)
 
-        $timeout(init, 1000);
+        if(now < final) $timeout(initCountdown, 1000);
+        else {
+            $scope.validateDate = false;
+            repaint();
+        }
     };
 
-    init();
+    if(now < final){
+        $scope.validateDate = true;
+        initCountdown();
+    }
+    else{
+        repaint();
+    }
+
+
 })
 .filter('timestamp', function() {
   return function(input, type) {
