@@ -166,6 +166,11 @@ footer a {
     color: #8b9dc3 !important;
 }
 
+#comunicado {
+    font-size: 3vh;
+    text-align: center;
+}
+
 /**
 *ng-cloak style
 **/
